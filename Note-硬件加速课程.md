@@ -8,26 +8,26 @@
 例如，A信号到来较晚，可以将   
     - if(A+B<24) Z<=C;
     - if(A<24-B) Z<=C;
-![综合](/Img/1.1.1.png)
+![综合](./Img/硬件加速课程/1.1.1.png)
 - 分支支路延迟-案例2  
 例如，case中的某一个信号来的比较晚，可以改变代码，使延迟的信号在后一级Mux出现
 <div align=center>
-<img src="./Img/1.1.3.1.png" alt="电路结构1" width=50%>
+<img src="./Img/硬件加速课程/1.1.3.1.png" alt="电路结构1" width=50%>
 </div>    
 <div align=center>
-<img src="./Img/1.1.3.2.png" alt="电路结构2" width=50%>
+<img src="./Img/硬件加速课程/1.1.3.2.png" alt="电路结构2" width=50%>
 </div>    
 <div align=center>
-<img src="./Img/1.1.3.3.png" alt="修改后的代码" width=50%>
+<img src="./Img/硬件加速课程/1.1.3.3.png" alt="修改后的代码" width=50%>
 </div>    
 
 - 数据通路控制信号延迟   
 原来的方法是先选后加，但是输入级选择Control信号到来较晚，导致延迟较大。因此可以将数据复制，先加后选，将Control信号放到最后，用面积换时间，改善了设计性能。
 <div align=center>
-<img src="./Img/1.1.4.1.png" alt="修改后的代码" width=50%>
+<img src="./Img/硬件加速课程/1.1.4.1.png" alt="修改后的代码" width=50%>
 </div>  
 <div align=center>
-<img src="./Img/1.1.4.2.png" alt="修改后的代码" width=40%>
+<img src="./Img/硬件加速课程/1.1.4.2.png" alt="修改后的代码" width=40%>
 </div>  
 
 面积：FPGA的设计中可以通过资源共享、剔除冗余信息的方式，减小设计面积，降低成本，减少功耗  
@@ -73,7 +73,7 @@ state[S3]: a<=e;
 
 热点：通常是指一个面积内占用大量布线资源。例如，设计中使用了很大的Mux，在布线阶段产生了很大的延迟，因此可以分解为多级较小的Mux
 <div align=center>
-<img src="./Img/1.1.2.png" alt="布线" width=60%>
+<img src="./Img/硬件加速课程/1.1.2.png" alt="布线" width=60%>
 </div>    
 
 ### **1.2 面积换速度——流水线概述**
@@ -87,7 +87,7 @@ state[S3]: a<=e;
 - 不定态X：触发器输入端信号电平**没有到达物理器件的有效电平的噪声容限**内，导致由接成反馈回路的两个反相器构成的触发器稳定在第三稳定点，后续电路可以理解为正确度电平，也可能是错误的电平。
 
 <div align=center>
-<img src="./Img/2.1.1.png" alt="亚稳态" width=60%>
+<img src="./Img/硬件加速课程/2.1.1.png" alt="亚稳态" width=60%>
 </div>    
 
 从数字集成电路角度分析，PMOS和NMOS通过不同导通关断产生的高低电平区别0和1状态，稳定状态下，PMOS和NMOS不可能同时导通，亚稳态打破了这个规则。以图7-8的反相器为例
@@ -96,7 +96,7 @@ state[S3]: a<=e;
 - 当D端没有达到有效电平的噪声容限时，可能会使PMOS和NMOS同时导通，这是一个没有定义状态，可能会导致继续往下传播，导致后续电路完全失效。
 
 <div align=center>
-<img src="./Img/2.1.2.png" alt="双触发器同步器" width=60%>
+<img src="./Img/硬件加速课程/2.1.2.png" alt="双触发器同步器" width=60%>
 </div>    
 
 注意：完全解决亚稳态现象的方法不存在。
@@ -159,7 +159,7 @@ end
 
 同步复位信号周期计算
 <div align=center>
-<img src="./Img/2.3.1.png" alt="三段式和两段式状态机区别" width=60%>
+<img src="./Img/硬件加速课程/2.3.1.png" alt="三段式和两段式状态机区别" width=60%>
 </div>    
 
 - 异步复位
@@ -183,17 +183,17 @@ begin
 end
 ```
 <div align=center>
-<img src="./Img/2.3.2.png" alt="异步复位同步释放电路" width=60%>
+<img src="./Img/硬件加速课程/2.3.2.png" alt="异步复位同步释放电路" width=60%>
 </div>    
 
 复位信号的扇出往往仅次于时钟信号，因此可能利用**多块**异步复位同步释放电路，然而这种方式可能由于前级寄存器在时钟边沿释放，导致存在一个周期的偏差，导致时序错乱。
 <div align=center>
-<img src="./Img/2.3.3.png" alt="异步复位同步释放电路" width=60%>
+<img src="./Img/硬件加速课程/2.3.3.png" alt="异步复位同步释放电路" width=60%>
 </div>    
 
 正确的复位电路复制方式【复位分发技术】
 <div align=center>
-<img src="./Img/2.3.4.png" alt="异步复位同步释放电路" width=60%>
+<img src="./Img/硬件加速课程/2.3.4.png" alt="异步复位同步释放电路" width=60%>
 </div>    
 
 ### **2.4 状态机相关**
@@ -202,7 +202,7 @@ end
 - 一段式：不推荐，逻辑混乱，难以维护。必须要考虑现态在何种条件下转移进入哪些次态，在每个现态的case下描述次态的输出。  
 
 <div align=center>
-<img src="./Img/2.2.2.png" alt="三段式和两段式状态机区别" width=60%>
+<img src="./Img/硬件加速课程/2.2.2.png" alt="三段式和两段式状态机区别" width=60%>
 </div>    
 
 注意1：两段式用状态寄存器分割了两部分组合逻辑（状态转移和输出），输出是由``current_state``决定，时序路径较短；三段式的输出逻辑是从``next_state``开始，因此状态转移和输出逻辑中的时序逻辑可以看为一体，该路径的时序就会比较紧张。   
@@ -229,7 +229,7 @@ IP集成的设计方法学，将软硬件集成在单颗IC内，其特征为
 
 麒麟990SoC是世界上第一颗晶体管规模超过百亿的芯片，采用7nm制程，包括CPU，GPU以及神经网络处理器NPU
 <div align=center>
-<img src="./Img/6.1.1.png" alt="布线" width=80%>
+<img src="./Img/硬件加速课程/6.1.1.png" alt="布线" width=80%>
 </div>    
 
 为了加快开发进度，提升硬件集成度，SoC包括处理器IP，硬件专用IP以及互联总线，而且一般移植了操作系统，具备软硬件协同计算能力，充分发挥软件和硬件加速IP。  
