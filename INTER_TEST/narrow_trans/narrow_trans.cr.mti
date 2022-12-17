@@ -1,0 +1,8 @@
+D:/DOING/00-GRAD/03-learn/Code/INTER_TEST/narrow_trans/narrow_trans.v {1 {vlog -work work -vopt -stats=none D:/DOING/00-GRAD/03-learn/Code/INTER_TEST/narrow_trans/narrow_trans.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module narrow_trans
+
+Top level modules:
+	narrow_trans
+
+} {} {}}
