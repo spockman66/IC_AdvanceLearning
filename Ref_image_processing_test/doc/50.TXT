@@ -1,0 +1,19 @@
+ D:\FPGA_projects\image_processing_test\doc\50.BMP(0)
+
+0000;
+0000;
+0000;
+7E18;
+4024;
+4042;
+4042;
+7842;
+4442;
+0242;
+0242;
+4242;
+4424;
+3818;
+0000;
+0000;/*"D:\FPGA_projects\image_processing_test\doc\50.BMP",0*/
+

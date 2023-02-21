@@ -82,7 +82,10 @@ LUT combining，当存在共享变量时，Vivado会自动把这两个布尔表�
 
 **5. ram_style**   
 指定综合器如何生成内存   
-例：``(*ram_syle = "distributed"*)reg [data_size-1:0] ram; ``    
+例：
+```verilog
+(*ram_syle = "distributed"*)reg [data_size-1:0] ram; 
+```    
 语法：  
 - block
 - distributed
@@ -104,8 +107,11 @@ equivalent registers，等效寄存器，即共享输入数据的寄存器。勾
 - **Vivado防止信号被综合掉的三种方法**
 
   1. 信号前面将keep hierarchy选择YES，或者选择soft（在综合时保持层次），这样有利于从模块中找到想抓取的信号和信号名不被更改。
-  2. 信号前面使用`` (* KEEP = “TRUE|FALSE|SOFT” *)``，可以防止信号被综合掉，但是无法防止在布局布线的时候优化掉。
-  3. 信号前面使用``(* DONT_TOUCH= “TRUE|FALSE” *)``，可以防止信号在综合，以及布局布线的时候被优化掉。
+  2. 信号前面使用`` (* KEEP = “TRUE|FALSE|SOFT” *)``，可以防止信号被综合掉，但是无法防止在布局布线的时候优化掉。大小写均可
+  3. 信号前面使用``(* DONT_TOUCH= “TRUE|FALSE” *)``，可以防止信号在综合，以及布局布线的时候被优化掉。大小写均可
+
+- **(*ASYNC_REG = "TRUE")**
+
 
 
 - **-fsm_extraction**  
@@ -115,6 +121,7 @@ equivalent registers，等效寄存器，即共享输入数据的寄存器。勾
   - gray
   - johnson
   - sequential
+
 
 
 - **fsm_encoding**  
@@ -157,7 +164,6 @@ equivalent registers，等效寄存器，即共享输入数据的寄存器。勾
 <div align=center>
 <img src="./Img/Vivado/2.1.3.png" alt="no_lc" width=80%>
 </div>    
-
 
 
 **directive**   
@@ -260,7 +266,6 @@ phys_opt_design [‑fanout_opt] [‑placement_opt] [‑routing_opt]
 </div>  
 
 
-
 ### **影响增量布局布线的因素**
 - 小的RTL的改变
   - 增大MEM尺寸
@@ -276,6 +281,11 @@ phys_opt_design [‑fanout_opt] [‑placement_opt] [‑routing_opt]
 - -directive命令失效
 - phys_opt_design没有增量模式，只有place和route有
 
+
+### **FPGA的PL和PS交互方法**
+
+- AXI-Lite写BRAM
+- AXI4-Master
 
 
 ## 最常用的TCL命令

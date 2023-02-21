@@ -1,0 +1,844 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 11 20:18:59 2022
+# Process ID: 18720
+# Current directory: E:/study/3.lesson_for_fpga/1.fir_low_pass
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2168 E:\study\3.lesson_for_fpga\1.fir_low_pass\1.fir_low_pass.xpr
+# Log file: E:/study/3.lesson_for_fpga/1.fir_low_pass/vivado.log
+# Journal file: E:/study/3.lesson_for_fpga/1.fir_low_pass\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/installsoftware/vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode All [current_project]
+set_property -dict [list CONFIG.Output_Selection {Cosine}] [get_ips dds_5M]
+close [ open E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v w ]
+add_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+can't read "c_xdevicefamily": no such variable
+can't read "c_xdevicefamily": no such variable
+can't read "c_xdevicefamily": no such variable
+can't read "c_xdevicefamily": no such variable
+can't read "c_xdevicefamily": no such variable
+can't read "c_xdevicefamily": no such variable
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_fir_top.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_fir_top.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v w ]
+add_files -fileset sim_1 E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v
+update_compile_order -fileset sim_1
+set_property top tb_my_fir_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top tb_my_fir_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_low_pass_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'fir_out_en' on this module [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v:51]
+ERROR: [VRFC 10-3180] cannot find port 'data_in_en' on this module [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v:48]
+ERROR: [VRFC 10-3180] cannot find port 'data_in' on this module [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v:47]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_low_pass_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:39]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/xsim.dir/tb_my_fir_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/xsim.dir/tb_my_fir_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 11 21:34:57 2022. For additional details about this file, please refer to the WebTalk help file at D:/installsoftware/vivado/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 109.445 ; gain = 17.848
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 11 21:34:57 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 987.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_my_fir_top_behav -key {Behavioral:sim_1:Functional:tb_my_fir_top} -tclbatch {tb_my_fir_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_my_fir_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_my_fir_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 996.801 ; gain = 9.320
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_out_data}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/data_out_valid}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_1Mhz_data}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_5Mhz_data}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_sum_1M_5M_data}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_1Mhz_data_tvalid}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_5Mhz_data_tvalid}} {{/tb_my_fir_top/fir_low_pass_top_inst/dds_inst/dds_1Mhz_5Mhz_tvalid}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/dds_din}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/dds_valid}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/fir_out}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/fir_out_valid}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h0}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h1}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h2}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h3}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h4}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h5}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h6}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h7}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h8}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h9}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h10}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h11}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h12}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h13}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h14}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h15}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h16}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h17}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h18}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h19}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h20}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h21}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h22}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h23}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h24}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h25}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h26}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h27}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h28}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h29}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h30}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/h31}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x0}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x1}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x2}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x3}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x4}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x5}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x6}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x7}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x8}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x9}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x10}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x11}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x12}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x13}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x14}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x15}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x16}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x17}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x18}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x19}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x20}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x21}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x22}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x23}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x24}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x25}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x26}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x27}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x28}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x29}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x30}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/x31}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul0}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul1}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul2}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul3}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul4}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul5}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul6}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul7}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul8}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul9}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul10}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul11}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul12}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul13}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul14}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul15}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul16}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul17}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul18}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul19}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul20}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul21}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul22}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul23}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul24}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul25}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul26}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul27}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul28}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul29}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul30}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_mul31}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/xh_add}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/fir_out_r}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/out_valid_r1}} {{/tb_my_fir_top/fir_low_pass_top_inst/fir1_inst/out_valid_r2}} 
+run 300 us
+run 300 us
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1066.000 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:39]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1066.000 ; gain = 0.000
+run 300 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_low_pass_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:38]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1102.711 ; gain = 0.000
+run 300 us
+set_property -dict [list CONFIG.Output_Frequency1 {0.1} CONFIG.PINC1 {1000001100010010011}] [get_ips dds_1MHz]
+generate_target all [get_files  E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_1MHz'...
+catch { config_ip_cache -export [get_ips -all dds_1MHz] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_1MHz, cache-ID = 54d6130d9b7d5282; cache size = 7.150 MB.
+export_ip_user_files -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci'
+export_simulation -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci] -directory E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/sim_scripts -ip_user_files_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files -ipstatic_source_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/modelsim} {questa=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/questa} {riviera=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/riviera} {activehdl=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+run 300 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_low_pass_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/sim/dds_1MHz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_1MHz'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:38]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1134.027 ; gain = 0.000
+run 300 us
+set_property -dict [list CONFIG.Output_Frequency1 {0.01} CONFIG.PINC1 {110100011011011}] [get_ips dds_1MHz]
+generate_target all [get_files  E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_1MHz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_1MHz'...
+catch { config_ip_cache -export [get_ips -all dds_1MHz] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_1MHz, cache-ID = 6ef70ae05aa0838b; cache size = 7.151 MB.
+export_ip_user_files -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci'
+export_simulation -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/dds_1MHz.xci] -directory E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/sim_scripts -ip_user_files_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files -ipstatic_source_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/modelsim} {questa=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/questa} {riviera=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/riviera} {activehdl=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_1MHz/sim/dds_1MHz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_1MHz'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:38]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1163.672 ; gain = 0.000
+run 300 us
+set_property -dict [list CONFIG.Output_Frequency1 {10} CONFIG.PINC1 {1100110011001100110011001}] [get_ips dds_5M]
+generate_target all [get_files  E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_5M/dds_5M.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_5M'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_5M'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_5M'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_5M'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_5M'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_5M'...
+catch { config_ip_cache -export [get_ips -all dds_5M] }
+export_ip_user_files -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_5M/dds_5M.xci] -no_script -sync -force -quiet
+reset_run dds_5M_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.runs/dds_5M_synth_1
+
+launch_runs -jobs 12 dds_5M_synth_1
+[Sun Dec 11 21:48:02 2022] Launched dds_5M_synth_1...
+Run output will be captured here: E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.runs/dds_5M_synth_1/runme.log
+export_simulation -of_objects [get_files E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_5M/dds_5M.xci] -directory E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/sim_scripts -ip_user_files_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files -ipstatic_source_dir E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/modelsim} {questa=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/questa} {riviera=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/riviera} {activehdl=E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/ip/dds_5M/sim/dds_5M.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_5M'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:38]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1182.699 ; gain = 0.000
+run 300 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/installsoftware/vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_my_fir_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_my_fir_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dds
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_low_pass_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_my_fir_top
+"xvhdl --incr --relax -prj tb_my_fir_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.sim/sim_1/behav/xsim'
+"xelab -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/installsoftware/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 23542f7045fd474f8fe0ce59921213ec --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_18 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_my_fir_top_behav xil_defaultlib.tb_my_fir_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:38]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'm_axis_data_tdata' [E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_18.pkg_dds_compiler_v6_0_18
+Compiling package dds_compiler_v6_0_18.dds_compiler_v6_0_18_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_18.pkg_betas
+Compiling package dds_compiler_v6_0_18.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_rdy [\dds_compiler_v6_0_18_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.pipe_add [\pipe_add(c_width=28,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_1mhz_arch of entity xil_defaultlib.dds_1MHz [dds_1mhz_default]
+Compiling architecture synth of entity dds_compiler_v6_0_18.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_core [\dds_compiler_v6_0_18_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18_viv [\dds_compiler_v6_0_18_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_18.dds_compiler_v6_0_18 [\dds_compiler_v6_0_18(c_xdevicef...]
+Compiling architecture dds_5m_arch of entity xil_defaultlib.dds_5M [dds_5m_default]
+Compiling module xil_defaultlib.dds
+Compiling module xil_defaultlib.fir1
+Compiling module xil_defaultlib.fir_low_pass_top
+Compiling module xil_defaultlib.tb_my_fir_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_my_fir_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1194.191 ; gain = 0.000
+run 300 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 21:56:47 2022...

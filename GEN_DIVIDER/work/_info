@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DOING/00-GRAD/03-learn/Code/IF_IIC
+vclk_divider_float
+Z0 !s110 1676011182
+!i10b 1
+!s100 =I9>RHNf2;Yg6`KJ^ULR`2
+INHjJnDj5Lib4XAPN6e<cX2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER
+w1676011094
+8D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_float.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_float.v
+L0 1
+Z3 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z4 !s108 1676011182.000000
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_float.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_float.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vclk_divider_half
+R0
+!i10b 1
+!s100 EW?bdBPbKPAAGgznfn`MQ3
+IW]WR<`KGVCH:gTAFOmh=N2
+R1
+R2
+w1675915256
+8D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1676011181.000000
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v|
+!i113 0
+R5
+R6
+vclk_divider_half_50
+R0
+!i10b 1
+!s100 [T1>IF3@XVzWhYVNVLEIB1
+IRXII?Q`C[IMl@o:YRKMdI3
+R1
+R2
+w1675926820
+8D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v|
+!i113 0
+R5
+R6
+vclk_divider_tb
+Z8 !s110 1676011181
+!i10b 1
+!s100 ^9?E5>6D3>JLLB6`QEd;W3
+IPAg9Xjh3jbdnN2zoZH2Jd2
+R1
+R2
+w1676011163
+8D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_tb.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1676011180.000000
+!s107 clk_divider_float.v|clk_divider_half.v|clk_divider_ultra.v|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_tb.v|
+!i113 0
+R5
+R6
+vclk_divider_ultra
+R8
+!i10b 1
+!s100 SCND]]CM0J>H[QhRZ?1gB2
+Ijgk^XIVJU<Wk>`@hJ`C043
+R1
+R2
+w1675912427
+8D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v|
+!i113 0
+R5
+R6

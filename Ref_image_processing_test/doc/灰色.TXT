@@ -1,0 +1,19 @@
+ D:\FPGA_projects\image_processing_test\doc\»ÒÉ«.BMP(0)
+
+04000800;
+04000800;
+04001FE0;
+FFFE2020;
+08004040;
+0880BFF8;
+08842108;
+12842108;
+12882108;
+24903FF8;
+29402000;
+41402002;
+82202002;
+04102002;
+18081FFE;
+60060000;/*"D:\FPGA_projects\image_processing_test\doc\»ÒÉ«.BMP",0*/
+

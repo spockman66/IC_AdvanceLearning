@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../1.fir_low_pass.srcs/sources_1/ip/dds_5M/sim/dds_5M.vhd" \
+
+nosort

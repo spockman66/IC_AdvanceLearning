@@ -1,0 +1,19 @@
+ D:\FPGA_projects\image_processing_test\doc\бли╚.BMP(0)
+
+10000800;
+11F80800;
+20081FE0;
+20082020;
+49F84040;
+F808BFF8;
+10082108;
+23FE2108;
+40202108;
+FA223FF8;
+41742000;
+00A82002;
+19242002;
+E2222002;
+40A01FFE;
+00400000;/*"D:\FPGA_projects\image_processing_test\doc\бли╚.BMP",0*/
+

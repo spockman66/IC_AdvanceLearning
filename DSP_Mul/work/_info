@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/DOING/00-GRAD/03-learn/Code/DSP_Cordic
+T_opt
+!s110 1676089208
+VLoMbWR5@]_@V]DzJL5_d:1
+04 7 4 work mul_raw fast 0
+=1-54e1ad54b2df-63e71774-f6-3ee0
+Z1 o-quiet -auto_acc_if_foreign -work work -debugdb
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1676089382
+V:nhLz1nam4NIR2iYdlM9[0
+04 6 4 work mul_tb fast 0
+=1-54e1ad54b2df-63e71824-1f6-873c
+R1
+R2
+n@_opt1
+R3
+vadder_full
+Z4 !s110 1676089044
+!i10b 1
+!s100 C9j6_TgAZ55kld0^G7W>W3
+I5BTUm`j`U6QhP`^9l:<5G1
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dD:/DOING/00-GRAD/03-learn/Code/DSP_Mul
+Z7 w1676039966
+Z8 8mul_pipe.v
+Z9 Fmul_pipe.v
+L0 37
+Z10 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z11 !s108 1676089043.000000
+Z12 !s107 mul_tb.v|mul_raw.v|mul_pipe.v|
+Z13 !s90 -reportprogress|300|mul_pipe.v|mul_raw.v|mul_tb.v|
+!i113 0
+Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vadder_half
+R4
+!i10b 1
+!s100 8FKP516<ecze`4D@P^Aom0
+IlfQMNOjOF2KKXoW31kFTB0
+R5
+R6
+R7
+R8
+R9
+L0 27
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R2
+vmul_pipe
+R4
+!i10b 1
+!s100 CS16`FUOXn?QeVGWf5_RE2
+IINo^S3G[l3cTMN6JAf4FW2
+R5
+R6
+R7
+R8
+R9
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R2
+vmul_raw
+R4
+!i10b 1
+!s100 6nU=MjnG`6lmP^1ZmX0KA3
+IOlS5TV`8oK=UcdHDoPNfW2
+R5
+R6
+w1676039244
+8mul_raw.v
+Fmul_raw.v
+L0 3
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R2
+vmul_tb
+R4
+!i10b 1
+!s100 eAVIXZITX1YbaJQoUg_Oh0
+Ig5zGSoMQD=1jA2gkF<gC=3
+R5
+R6
+w1676039335
+8mul_tb.v
+Fmul_tb.v
+L0 3
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R2

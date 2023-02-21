@@ -1,0 +1,22 @@
+D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v {1 {vlog -work work -vopt -stats=none D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_ultra.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module clk_divider_ultra
+
+Top level modules:
+	clk_divider_ultra
+
+} {} {}} D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v {1 {vlog -work work -vopt -stats=none D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half_50.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module clk_divider_half_50
+
+Top level modules:
+	clk_divider_half_50
+
+} {} {}} D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v {1 {vlog -work work -vopt -stats=none D:/DOING/00-GRAD/03-learn/Code/GEN_DIVIDER/clk_divider_half.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module clk_divider_half
+
+Top level modules:
+	clk_divider_half
+
+} {} {}}
