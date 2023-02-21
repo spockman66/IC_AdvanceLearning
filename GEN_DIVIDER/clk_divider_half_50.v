@@ -15,7 +15,7 @@ wire clk_odd_n;
 reg [2:0] clk_cnt_p, clk_cnt_n;
 
 always@(posedge clk or negedge rst) begin
-    if(~rst || &clk_cnt_p[2:1] && ~clk_cnt_p[0])
+    if(~rst || &clk_cnt_p[2:1] && ~clk_cnt_p[0])        // 7分频，0-6
         clk_cnt_p <= 3'd0;
     else
         clk_cnt_p <= clk_cnt_p + 1'b1;

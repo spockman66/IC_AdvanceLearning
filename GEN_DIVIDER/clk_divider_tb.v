@@ -1,6 +1,7 @@
 `timescale 1ns/1ps
 
-`include "clk_divider_ultra.v"
+`include "clk_divider_even.v"
+`include "clk_divider_odd.v"
 `include "clk_divider_half.v"
 `include "clk_divider_float.v"
 
@@ -21,7 +22,7 @@ end
 
 always #5 clk = ~clk;               // 100M, T=10ns
 
-// clk_divider_ultra #(
+// clk_divider_even #(
 //     .DIV_PARAM      (4)
 // ) u_ultra_div
 // (
@@ -31,9 +32,18 @@ always #5 clk = ~clk;               // 100M, T=10ns
 //     .clk_div    (clk_div)
 // );
 
+clk_divider_odd #(
+    .DIV_PARAM      (5)
+) u_ultra_div
+(
+    .clk        (clk)   ,
+    .rstn       (rstn)  ,
+
+    .clk_div    (clk_div)
+);
 
 // clk_divider_half #(
-//     .DIV_PARAM      (2.5)
+//     .DIV_PARAM      (3.5)
 // ) u_half_div
 // (
 //     .clk        (clk)   ,
@@ -43,15 +53,15 @@ always #5 clk = ~clk;               // 100M, T=10ns
 // );
 
 
-clk_divider_float #(
-    .DIV_PARAM      (8.6)
-) u_float
-(
-    .clk        (clk)   ,
-    .rstn       (rstn)  ,
+// clk_divider_float #(
+//     .DIV_PARAM      (8.6)
+// ) u_float
+// (
+//     .clk        (clk)   ,
+//     .rstn       (rstn)  ,
 
-    .clk_div    (clk_div)
-);
+//     .clk_div    (clk_div)
+// );
 
 // clk_divider_half_50 u_half_div
 // (
