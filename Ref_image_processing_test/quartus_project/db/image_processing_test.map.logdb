@@ -1,3 +1,0 @@
-v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Image_Processor:u_Image_Processor|Sobel_Edge_Detector:u_Sobel_Edge_Detector|lpm_mult:Mult1|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Image_Processor:u_Image_Processor|Sobel_Edge_Detector:u_Sobel_Edge_Detector|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,

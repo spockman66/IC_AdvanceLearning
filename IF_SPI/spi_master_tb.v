@@ -34,6 +34,12 @@ module spi_master_tb;
 
     end
 
+initial begin
+    $dumpfile("spi_master_sim.vcd");
+    $dumpvars;
+    #1000_000 $finish;
+end
+
 
     spi_master #(
                    .CPOL(0),

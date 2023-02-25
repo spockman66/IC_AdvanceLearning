@@ -1,9 +1,0 @@
-
-State Machine - |Image_Processing_Test|sccb_dri:u_sccb_dri|fsm_c
-Name fsm_c.STOP fsm_c.DATA_WR fsm_c.ADDR8 fsm_c.ADDR16 fsm_c.WR_ADDR fsm_c.IDLE 
-fsm_c.IDLE 0 0 0 0 0 0 
-fsm_c.WR_ADDR 0 0 0 0 1 1 
-fsm_c.ADDR16 0 0 0 1 0 1 
-fsm_c.ADDR8 0 0 1 0 0 1 
-fsm_c.DATA_WR 0 1 0 0 0 1 
-fsm_c.STOP 1 0 0 0 0 1 

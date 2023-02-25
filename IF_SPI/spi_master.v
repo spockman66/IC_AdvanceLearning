@@ -153,7 +153,7 @@ always @(posedge clk or negedge rstn) begin
 end
 
 
-always @(posedge spi_clk or negedge rstn) begin
+always @(posedge spi_clk_d or negedge rstn) begin
     if(~rstn || tx_cnt == 'd8)
         tx_cnt <= 'd0;
     else if(state == TRANS)

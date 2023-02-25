@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/dds.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module dds
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fir1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sources_1/new/fir_low_pass_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fir_low_pass_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/3.lesson_for_fpga/1.fir_low_pass/1.fir_low_pass.srcs/sim_1/new/tb_my_fir_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_my_fir_top

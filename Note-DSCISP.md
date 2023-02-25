@@ -1,13 +1,38 @@
-# 数码相机中的原理和信号处理
+# 数码相机中的原理和信号处理  
+
+简介CMOS数码相机的工作全流程，图像处理算法及硬件实现，分为两部分
+- 经典作品CMOS图像传感器《数码相机中的原理和信号处理》的阅读记录，CMOS技术专家，日本人Nakamura所著
+- ISP（图像信号处理）算法概述、工作原理、架构、处理流程
 
 
-## 成像原理
+## CMOS成像原理
+---    
+占坑，待更新 2023.02.25
+
+## 噪声分析
 ---    
 
 
 
-
 ## 图像信号处理（ISP）
+
+- ISP（图像信号处理器）的输出数据，如做AEC（自动曝光控制）、AGC（自动增益控制）、AWB（自动白平衡）、色彩校正、Lens Shading、Gamma 校正、祛除坏点、Auto Black Level、Auto White Level等等
+- DSP（数字信号处理器），它可以做些拍照以及回显，录像以及回放，例如JPEG的编解码，H.264编解码等等
+
+
+**ISP处理流程**
+1. 透镜光学图像投射，经过光电转换为模拟电信号，消噪声后经过 A/D 转换后变为数字Bayer图像信号
+2. 黑电平补偿（black level compensation）
+3. 镜头矫正（lens shading correction）
+4. 坏像素矫正（bad pixel correction）
+5. 颜色插值 （demosaic）
+6. Bayer噪声去除
+7. 白平衡（awb）
+8. 矫正色彩矫正（color correction）
+9. gamma矫正
+10. 色彩空间转换（RGB->YUV）
+11. 彩噪去除与边缘加强、色彩与对比度加强
+12. 输出 YUV或RGB格式的数据
 
 ### **坏点校正**
 

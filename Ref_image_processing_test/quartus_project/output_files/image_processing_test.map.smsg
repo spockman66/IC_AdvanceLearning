@@ -1,2 +1,0 @@
-Info (10281): Verilog HDL Declaration information at Image_Processing_Test.v(48): object "SOBEL_THRESHOLD" differs only in case from object "sobel_threshold" in the same scope
-Info (10281): Verilog HDL Declaration information at sccb_dri.v(24): object "DATA_WR" differs only in case from object "data_wr" in the same scope
