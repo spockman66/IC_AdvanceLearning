@@ -4,11 +4,16 @@
 
 ### **1.1 RTL书写中的延迟、面积**
 延迟：基于延迟考虑的代码优化，核心法则：__将到来时间较晚的信号放到靠输出端口近的位置。__
+
 - 分支支路延迟-案例1  
 例如，A信号到来较晚，可以将   
 	- if(A+B<24) Z<=C;
 	- if(A<24-B) Z<=C;
-![综合](./Img/硬件加速课程/1.1.1.png)
+<div align=center>
+<img src="./Img/硬件加速课程/1.1.1.png" alt="综合" width=50%>
+</div>   
+
+
 - 分支支路延迟-案例2  
 例如，case中的某一个信号来的比较晚，可以改变代码，使延迟的信号在后一级Mux出现
 <div align=center>
@@ -18,13 +23,13 @@
 <img src="./Img/硬件加速课程/1.1.3.2.png" alt="电路结构2" width=50%>
 </div>    
 <div align=center>
-<img src="./Img/硬件加速课程/1.1.3.3.png" alt="修改后的代码" width=50%>
+<img src="./Img/硬件加速课程/1.1.3.3.png" alt="修改后的代码" width=30%>
 </div>    
 
 - 数据通路控制信号延迟   
 原来的方法是先选后加，但是输入级选择Control信号到来较晚，导致延迟较大。因此可以将数据复制，先加后选，将Control信号放到最后，用面积换时间，改善了设计性能。
 <div align=center>
-<img src="./Img/硬件加速课程/1.1.4.1.png" alt="修改后的代码" width=50%>
+<img src="./Img/硬件加速课程/1.1.4.1.png" alt="修改后的代码" width=40%>
 </div>  
 <div align=center>
 <img src="./Img/硬件加速课程/1.1.4.2.png" alt="修改后的代码" width=40%>
@@ -153,7 +158,7 @@ state[S3]: a<=e;
   - RAM
 
 <div align=center>
-<img src="./Img/硬件加速课程/2.2.5.png" alt="FIFO电路图" width=100%>
+<img src="./Img/硬件加速课程/2.2.5.png" alt="FIFO电路图" width=75%>
 </div>    
 
 
@@ -202,14 +207,14 @@ FIFO有效解决两个时钟源间数据同步的关系，但是亚稳态问题�
 二进制转格雷码：最高位保存，剩下的右移异或   
 
 ```verilog
-assign a = {a[LEN-1], a[LEN-1:1] ^ a[LEN-2：0]};
+assign a = {a[LEN-1], a[LEN-1:1] ^ a[LEN-2:0]};
 ```
 
 格雷码转二进制码：最高位保存，**迭代** 二进制当前位 = 高位^格雷码当前位
 ```verilog
-always @ (Gry)begin       
-	Bin[length-1]=Gry[length-1];       
-	for(int i=length-2;i>=0;i=i-1)               
+always @ (Gry)begin
+	Bin[length-1]=Gry[length-1];
+	for(int i=length-2;i>=0;i=i-1)
 	Bin[i]=Bin[i+1]^Gry[i];
 end 
 ```
@@ -217,7 +222,7 @@ end
 - 异步FIFO的存储深度只能是2^n的原因：由于格雷码是每2^n个一循环，保证首尾的数据仅有一位发生变化
 - 问题：深度很大时，额外空间非常巨大，例如需要深度为300的FIFO，只能使用512，有200个额外空间
 - 解决办法一：使用两个FIFO，深度为300的同步FIFO，跟随一个小的异步FIFO，用于与其他时钟域同步
-- 解决办法二：对任何数值建立偶数格雷码计数器。通过增加计数偏移量来实现，不是从0到$2^n$，从$(2^n)/2-fifo\_depth/2$到$(2^n)/2+fifo\_depth/2-1$，代入例子，表示为106(0_1010_1111)到405(1_0101_1111)
+- 解决办法二：对任何数值建立偶数格雷码计数器。通过增加计数偏移量来实现，不是从0到$2^n$，从$(2^n)/2-fifo{\_}depth/2$到$(2^n)/2+fifo{\_}depth/2-1$，代入例子，表示为106(0_1010_1111)到405(1_0101_1111)
 
 格雷码加法器
 ```verilog
@@ -256,7 +261,7 @@ assign Gray = Gray_reg;
 
 同步复位信号周期计算
 <div align=center>
-<img src="./Img/硬件加速课程/2.3.1.png" alt="三段式和两段式状态机区别" width=60%>
+<img src="./Img/硬件加速课程/2.3.1.png" alt="三段式和两段式状态机区别" width=50%>
 </div>    
 
 - 异步复位
@@ -280,12 +285,12 @@ begin
 end
 ```
 <div align=center>
-<img src="./Img/硬件加速课程/2.3.2.png" alt="异步复位同步释放电路" width=60%>
+<img src="./Img/硬件加速课程/2.3.2.png" alt="异步复位同步释放电路" width=35%>
 </div>    
 
 复位信号的扇出往往仅次于时钟信号，因此可能利用**多块**异步复位同步释放电路，然而这种方式可能由于前级寄存器在时钟边沿释放，导致存在一个周期的偏差，导致时序错乱。
 <div align=center>
-<img src="./Img/硬件加速课程/2.3.3.png" alt="异步复位同步释放电路" width=60%>
+<img src="./Img/硬件加速课程/2.3.3.png" alt="异步复位同步释放电路" width=40%>
 </div>    
 
 正确的复位电路复制方式【复位分发技术】
@@ -299,7 +304,7 @@ end
 - 一段式：不推荐，逻辑混乱，难以维护。必须要考虑现态在何种条件下转移进入哪些次态，在每个现态的case下描述次态的输出。  
 
 <div align=center>
-<img src="./Img/硬件加速课程/2.2.2.png" alt="三段式和两段式状态机区别" width=80%>
+<img src="./Img/硬件加速课程/2.2.2.png" alt="三段式和两段式状态机区别" width=50%>
 </div>    
 
 注意1：两段式用状态寄存器分割了两部分组合逻辑（状态转移和输出），输出是由``current_state``决定，时序路径较短；三段式的输出逻辑是从``next_state``开始，因此状态转移和输出逻辑中的时序逻辑可以看为一体，该路径的时序就会比较紧张。   
@@ -331,14 +336,14 @@ end
 
 
 <div align=center>
-<img src="./Img/硬件加速课程/4.1.1.png" alt="裕量" width=70%>
+<img src="./Img/硬件加速课程/4.1.1.png" alt="裕量" width=50%>
 </div>   
 
 **注意：Tsu和Thd二者不能同时为负。至于建立时间是否为固定值，众说纷纭，比较中肯的观点是，考虑建立时间需求和建立时间裕量的概念，前者是根据时序计算，得到的Tsu，后者是Tsu减去数据实际到达的时间（数据早到了多久）**
 
 **注意：时序路径不只是从一个寄存器到另一个寄存器，对于有反馈的寄存器，直接考虑反馈回路**
 <div align=center>
-<img src="./Img/硬件加速课程/4.1.2.png" alt="时序路径" width=70%>
+<img src="./Img/硬件加速课程/4.1.2.png" alt="时序路径" width=50%>
 </div>   
 
 
@@ -355,7 +360,7 @@ IP集成的设计方法学，将软硬件集成在单颗IC内，其特征为
 
 麒麟990SoC是世界上第一颗晶体管规模超过百亿的芯片，采用7nm制程，包括CPU，GPU以及神经网络处理器NPU
 <div align=center>
-<img src="./Img/硬件加速课程/6.1.1.png" alt="布线" width=80%>
+<img src="./Img/硬件加速课程/6.1.1.png" alt="" width=70%>
 </div>    
 
 为了加快开发进度，提升硬件集成度，SoC包括处理器IP，硬件专用IP以及互联总线，而且一般移植了操作系统，具备软硬件协同计算能力，充分发挥软件和硬件加速IP。  
