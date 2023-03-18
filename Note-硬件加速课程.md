@@ -312,8 +312,185 @@ end
 
 
 ### **3.1 逻辑综合**
-逻辑综合逻辑综合
+逻辑综合将HDL的RTL级电路转换到门级的过程，DC是做电路综合的核心工具，将HDL描述的电路转换为基于工艺库的门级网表
+**目的**
+- 决定电路门级结构，寻求时序和面积的平衡，寻求功耗和时序的平衡，增强电路可测性
+**过程**
+- 转译（HDL转换为DC内部数据库）
+- 优化（根据施加的约束，进行优化）
+- 映射（映射到工艺库，生成对应的电路网表）
 
+**逻辑综合处理对象**
+- 设计对象：待综合的对象
+- Port：最外部的输入输出端口
+- CLK：时钟
+- Cell：根据原电路，例化出的各个模块
+- References：原电路设计
+- Pin：内部引脚
+- Net：内部电路连线
+
+**逻辑综合的实施流程**
+- 预综合过程
+  - DC启动
+    - dc_shell
+    - dc_shell-t
+    - GUI方式
+  - 设置库文件
+  - 创建启动脚本文件
+  - 读入设计文件
+  - DC设计对象
+  - 模块划分
+- 施加设计约束
+- 设计综合
+- 后综合过程
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.1.png" alt="逻辑综合" width=50%>
+</div>    
+
+command.log和view_command.log，分别记录用户在使用DC时执行的命令以及设置的参数
+类似于Vivado中的vivado_journal.log
+
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.2.png" alt="DC读取文件" width=50%>
+</div>    
+
+**两种文件读入方式**
+- read
+- analyze&elaborate
+  - analyze生成.syn文件，elaborate
+  - 允许设计者进行语法检查和HDL代码转换
+  - 只能读入verilog和vhdl
+
+**读入文件后，链接**
+- link后出现unresolved
+  - 需要重新读取
+  - 在synopsys_dc.setup中添加link_library
+
+
+DC在运行过程中需要用到的几种库文件
+- 目标库（target_library）
+  - 综合后电路网表最终映射到的库
+  - HDL->GTECH->目标库
+  - db格式，晶圆厂提供
+  - 包含行为、引脚、面积、时序信息甚至功耗方面参数
+- 链接库（link_library）
+  - 设置模块或者单元电路的引用
+  - 链接库对应IP，目标库对应标准单元
+  - 必须包含*
+```tcl
+set target_library "my_tech.db"
+set link_library "*my_tech.db"
+lappend search_path {bob}
+
+analyze source/*.v
+elaborate TOP
+```
+
+- 符号库（symbol_library）
+  - 定义单元电路显示的schematic库
+  - 使用design_analyzer和design_vision查看分析电路时使用
+- 算术运算库（synthetic_library）
+  - DC将加法或者乘法综合为性能比较差的运算
+  - 使用扩展的DesignWare库，更高性能的模块（超前进位等）
+
+
+
+标准单元工艺库信息
+- 组合单元模型
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.5.png" alt="组合单元模型1" width=50%>
+</div>   
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.6.png" alt="组合单元模型2" width=50%>
+</div>
+
+- 时序单元模型
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.3.png" alt="时序单元模型1" width=50%>
+</div>   
+<div align=center>
+<img src="./Img/硬件加速课程/3.1.4.png" alt="时序单元模型2" width=50%>
+</div>   
+
+
+
+
+
+### **3.2 综合中的时序约束**
+
+时序路径可以分为
+- 输入到寄存器的路径
+- 寄存器到寄存器之间的路径
+- 寄存器到输出的路径
+- 输入直接到输出的路径
+
+综合时各种优化都是以时钟为基准计算路径延迟的，因此需要综合时指定时钟周期，作为路径延迟的基准
+
+定义时钟约束
+- create_clock -period 10 [get_ports clk]
+- set_dont_touch_network [get_clocks clk]
+  - 不对时钟网络进行优化
+  - 因为时钟树综合有特点方法，需要考虑PR的物理信息
+  - 在PR阶段得到准确的时钟网络
+
+对于触发器和触发器之间的路径X，留给的时钟裕量也就是一个时钟周期。
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.1.png" alt="D2D" width=50%>
+</div>   
+
+定义输入延迟
+- set_input_delay -max 4 -clock clk [get_ports A]
+
+输入延时是指被综合模块外的寄存器触发的信号，在到达被综合模块前经过的延时
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.2.png" alt="D2D" width=50%>
+</div>   
+
+定义输出延迟
+输入延时是指被综合模块的信号，在到达输出外围逻辑寄存器的延时
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.3.png" alt="I2D" width=50%>
+</div>   
+
+DRC约束
+
+- set_transition_time
+  - 约束信号、端口、net不能超过这个值
+- set_max_fanout
+  - 表示单元输入引脚相对负载的数目，不表示真正的电容负载
+- set_max_capacitance
+
+
+
+**TCL脚本约束文件**
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.4.png" alt="TCL脚本" width=50%>
+</div>   
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.5.png" alt="TCL脚本" width=50%>
+</div>  
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.6.png" alt="TCL脚本" width=50%>
+</div>  
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.7.png" alt="TCL脚本" width=50%>
+</div>  
+
+
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.8.png" alt="TCL脚本" width=50%>
+</div>  
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.9.png" alt="TCL脚本" width=50%>
+</div>  
+<div align=center>
+<img src="./Img/硬件加速课程/3.2.10.png" alt="TCL脚本" width=50%>
+</div>  
 
 ### **3.3 Synopsys TCL语言**
 - get_ports C*
