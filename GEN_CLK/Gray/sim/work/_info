@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DOING/00-GRAD/03-learn/Code/DSP_Sort/sim
+vgray_counter
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 B>mWT?db;L]gN7hEMcIKY1
+ITA^7LhiLjRJBUUTLK8>1e0
+!s105 gray_counter_sv_unit
+S1
+Z1 dD:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/sim
+w1681527937
+8D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv
+FD:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv
+L0 12
+Z2 OL;L;10.6d;65
+Z3 !s108 1681527943.000000
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+vgray_counter_tb
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 _P0NJH0N9S<`_oHleh71Y3
+IOP<e2R?Yj[[i[oHo>I^J01
+R1
+w1681525191
+8D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v
+FD:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v
+L0 1
+R2
+R3
+!s107 D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4

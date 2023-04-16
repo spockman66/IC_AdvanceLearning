@@ -1,0 +1,15 @@
+D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv {1 {vlog -work work -vopt -sv -stats=none D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter.sv
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module gray_counter
+
+Top level modules:
+	gray_counter
+
+} {} {}} D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v {1 {vlog -work work -vopt -stats=none D:/DOING/00-GRAD/03-learn/Code/GEN_CLK/Gray/rtl/gray_counter_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module gray_counter_tb
+
+Top level modules:
+	gray_counter_tb
+
+} {} {}}
